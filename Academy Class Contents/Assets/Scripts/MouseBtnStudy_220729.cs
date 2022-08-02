@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MouseBtnStudy_220729: MonoBehaviour
 {
+    Vector3 end;
+    float moveSpeed = 2.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,7 @@ public class MouseBtnStudy_220729: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        #region 수업시간 내용
         // 기본 마우스 입력
         /*if (Input.GetMouseButtonDown(0))
             Debug.Log("Pressed left click.");
@@ -29,9 +33,37 @@ public class MouseBtnStudy_220729: MonoBehaviour
 
         //MouseButton();
 
-        RotateOneSec();
+        //RotateOneSec();
+
+        // 마우스 입력값 결과 출력
+        /*float x = Input.GetAxis("Mouse X");
+        float y = Input.GetAxis("Mouse Y");
+        if (x != 0)
+            print($"마우스 X : {x}");
+        if (y != 0)
+            print($"마우스 Y : {y}");*/
+
+        // 바닥찍어서 이동하게 만드는 함수
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hitInfo = new RaycastHit();
+            int layerMask = 1 << 6;
+            layerMask = ~layerMask;
+
+            if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, layerMask))
+            {
+                print("교차된 게임 오브젝트 이름 = " + hitInfo.collider.name);
+                print("교차된 게임 오브젝트 이름 = " + hitInfo.point);
+                end = hitInfo.point;
+            }
+        }
+        // 클릭한 곳으로 이동
+        transform.position = Vector3.MoveTowards(transform.position, end, moveSpeed * Time.deltaTime);
+        #endregion
     }
 
+    #region 수업시간 내용
     private void MouseButton()
     {
         if (Input.GetMouseButton(0))
@@ -50,9 +82,10 @@ public class MouseBtnStudy_220729: MonoBehaviour
         {
             timeCnt -= 1;
 
-            transform.Rotate(Vector3.down * 1); //방법 1
+            transform.Rotate(Vector3.up); //방법 1
 
-            //transform.rotation *= Quaternion.Euler(Vector3.down); // 방법2
+            //transform.rotation *= Quaternion.Euler(0,1,0); // 방법2
         }
     }
+    #endregion
 }
