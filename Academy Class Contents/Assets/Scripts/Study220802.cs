@@ -33,6 +33,7 @@ public class Study220802 : MonoBehaviour
 
         // 3번 오브젝트를 비활성화 하기
         searchObj("Monster_3").SetActive(false);
+
     }
 
     private void Update()
