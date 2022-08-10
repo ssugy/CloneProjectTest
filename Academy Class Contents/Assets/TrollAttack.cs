@@ -20,6 +20,13 @@ public class TrollAttack : StateMachineBehaviour
         // 내가 다른곳으로 클릭한다 => 공격을 1초동안 멈추고 이동한다. = 이건 attack에서 하는게 아니라, 클릭할때 해야된다.
         // 또는 적이 물러난다 => 이건 상태 고민좀 해야됨. 쫓아가게 할 것인지, 아니면 그냥 멈춰있을것인지
 
+        float time = animator.recorderStartTime % 1f;
+
+        if (time >= 0.95f)
+        {
+
+        }
+
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
