@@ -34,5 +34,10 @@ public class Std220805_Resources : MonoBehaviour
             Instantiate(item, new Vector3(1, 1, 1), Quaternion.identity);
             
         }
+
+if (Input.GetKey(KeyCode.UpArrow))
+{
+// 이동내용 구현
+}
     }
 }
