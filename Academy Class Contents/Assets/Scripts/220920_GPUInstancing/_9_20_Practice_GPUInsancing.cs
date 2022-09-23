@@ -25,6 +25,27 @@ public class _9_20_Practice_GPUInsancing : MonoBehaviour
         //renderer.SetPropertyBlock(props);
         createObject.transform.position = new Vector3(Random.Range(0, 10), 0, Random.Range(0, 10));
     }
+
+    /**
+MaterialPropertyBlock props = new MaterialPropertyBlock();
+
+[后沫] renderer = gameObject.GetComponent<[后沫]>();
+
+renderer.[后沫](props);
+
+float r = Random.Range(0.0f, 1.0f);
+
+float g = Random.Range(0.0f, 1.0f);
+
+float b = Random.Range(0.0f, 1.0f);
+
+float a = Random.Range(0.0f, 1.0f);
+
+props.SetColor("_Color", new Color(r,g,b,a));
+
+renderer.[后沫](props);
+     */
+
     void Start()
     {
         
