@@ -8,6 +8,7 @@ TagManager:
   - Terrain
   - myTag
   - Building
+  - line
   layers:
   - Default
   - TransparentFX
