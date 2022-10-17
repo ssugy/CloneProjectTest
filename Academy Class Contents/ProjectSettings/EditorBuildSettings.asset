@@ -4,11 +4,4 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: "Assets/Scripts/221011_\uD3F0\uD2B8_\uC2A4\uD504\uB77C\uC774\uD2B8/221011.unity"
-    guid: 227b2c7b63667494aa957cb3371addf4
-  - enabled: 1
-    path: "Assets/Scripts/221011_\uD3F0\uD2B8_\uC2A4\uD504\uB77C\uC774\uD2B8/InvokeTestScene.unity"
-    guid: 5a0813f9c6a3496409679d5982ce73ea
-  m_configObjects: {}
+  m_Scenes: []
