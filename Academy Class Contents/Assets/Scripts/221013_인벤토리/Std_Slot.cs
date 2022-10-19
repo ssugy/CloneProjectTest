@@ -26,17 +26,15 @@ public class Std_Slot : MonoBehaviour
     void Start()
     {
         rcTransform = GetComponent<RectTransform>();
-        //Debug.Log($"rcTransform.position {rcTransform.position} || {rcTransform.rect.width * 0.5f}");
-        //rc.x = rcTransform.position.x - rcTransform.rect.width * 0.5f;    // RC 쓰기 때문에 이거 필요없음
-        //rc.y = rcTransform.position.y + rcTransform.rect.height * 0.5f;   // RC 쓰기 때문에 이거 필요없음
-        ////Debug.Log($"11rc.x {rc.x}");
-        //rc.xMin = rc.x;   // 이것도 필요한가 x좌표의 최소값이 뭔상관이지 더 문제되는거 아닌가?
-        //rc.yMin = rc.y;    // 이걸 어떤걸로 설정하던 아래의 width height설정을 하게되면 자동으로 초기화가 이루어진다.
-        //rc.xMax = rc.xMin + rc.width;
-        //rc.xMax = rc.xMin + rc.height;
+
+        rc.x = rcTransform.position.x - rcTransform.rect.width * 0.5f;    // RC 쓰기 때문에 이거 필요없음
+        rc.y = rcTransform.position.y + rcTransform.rect.height * 0.5f;   // RC 쓰기 때문에 이거 필요없음
+        rc.xMin = rc.x;   // 이것도 필요한가 x좌표의 최소값이 뭔상관이지 더 문제되는거 아닌가?
+        rc.yMin = rc.y;    // 이걸 어떤걸로 설정하던 아래의 width height설정을 하게되면 자동으로 초기화가 이루어진다.
+        rc.xMax = rc.xMin + rc.width;
+        rc.xMax = rc.xMin + rc.height;
         rc.width = rcTransform.rect.width;
         rc.height = rcTransform.rect.height;
-        //Debug.Log($"22rc.x {rc.x}");
     }
 
     /// <summary>

@@ -49,9 +49,9 @@ public class SampleClass : MonoBehaviour
         //NE_Class2 ne2 = new NE_Class2();
         //ne.Add(ne2);    // 클래스 추가
 
-        ne[0].ShowNum(10);
-        ne[1].ShowNum(10);
-        ne[2].ShowNum(10);
+        //ne[0].ShowNum(10);
+        //ne[1].ShowNum(10);
+        //ne[2].ShowNum(10);
         
     }
 
@@ -69,9 +69,9 @@ public class SampleClass : MonoBehaviour
             //c[1].num1 = 20;
             //c[2].num1 = 30;  
 
-            ne[0].num1 = 10;
-            ne[1].num1 = 20;
-            ne[2].num1 = 30;
+            //ne[0].num1 = 10;
+            //ne[1].num1 = 20;
+            //ne[2].num1 = 30;
         }
     }
 }
