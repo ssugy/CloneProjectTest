@@ -14,18 +14,18 @@ public class 단순테스트스크립트 : MonoBehaviour
         Debug.Log("Start 함수 실행 2");
     }
 
-    private void FixedUpdate()
-    {
-        Debug.Log("FixedUpdate 함수 실행 3");
-    }
+    //private void FixedUpdate()
+    //{
+    //    Debug.Log("FixedUpdate 함수 실행 3");
+    //}
 
-    void Update()
-    {
-        Debug.Log("Update 함수 실행 4");
-    }
+    //void Update()
+    //{
+    //    Debug.Log("Update 함수 실행 4");
+    //}
 
-    private void LateUpdate()
-    {
-        Debug.Log("LateUpdate 함수 실행 5");
-    }
+    //private void LateUpdate()
+    //{
+    //    Debug.Log("LateUpdate 함수 실행 5");
+    //}
 }
