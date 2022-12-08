@@ -1,0 +1,7 @@
+index,name,parentIndex,posx,posy,posz,rotx,roty,rotz,scalex,scaley,scalez
+1,building1,-1,2,3,4,0,0,0,1,1,1
+2,building1 (1),1,7,8,4,0,0,0,1,1,1
+3,GameObject,2,7,8,4,0,0,0,1,1,1
+4,GameObject (1),2,9.440001,8,4,0,0,0,1,1,1
+5,GameObject (2),2,7,9.96,4,0,0,0,1,1,1
+6,building1 (2),-1,2,1,3,0,0,0,1,1,1
