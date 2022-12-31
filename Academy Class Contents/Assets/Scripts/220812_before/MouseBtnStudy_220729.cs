@@ -7,13 +7,6 @@ public class MouseBtnStudy_220729: MonoBehaviour
     Vector3 end;
     float moveSpeed = 2.5f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         #region 수업시간 내용
